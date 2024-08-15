@@ -1,20 +1,72 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { Text, View, StyleSheet, ScrollView } from "react-native"
+import ListMap from "./components/ListMap"
+import Grid from "./components/Grid";
+import UserList from "./components/UserList";
+import Class_components from "./components/Class_components";
 
-export default function App() {
+
+const App = () => {
+  const user_List =[
+    {
+        id:1,
+        email:"mohsinriaz@gmail.com",
+        name:"mohsin"
+    },
+    {
+        id:2,
+        email:"ali@gmail.com",
+        name:"ali"
+    },
+    {
+        id:3,
+        email:"khan@gmail.com",
+        name:"khan"
+    },
+    {
+        id:4,
+        email:"tahir@gmail.com",
+        name:"tahir"
+    },
+    {
+        id:5,
+        email:"shahbaz@gmail.com",
+        name:"shahbaz"
+    },
+    
+
+]
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+    <ScrollView>
+      <View style={styles.container}>
+      <Text style={styles.text}>App components</Text>
+      {/* <ListMap ></ListMap> */}
+      {/* <UserList item={user_List}></UserList> */}
+      <Class_components></Class_components>
+      
+
+      {/* <Grid /> */}
+      </View>
+    </ScrollView>
+    
+  )
+
 }
+
+export default App;
+
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    
   },
-});
+  text: {
+    textAlign: "center",
+    margin:15,
+    padding:15,
+    fontSize: 24,
+    color: "red"
+  }
+})
