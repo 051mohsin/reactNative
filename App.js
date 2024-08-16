@@ -3,6 +3,7 @@ import ListMap from "./components/ListMap"
 import Grid from "./components/Grid";
 import UserList from "./components/UserList";
 import Class_components from "./components/Class_components";
+import UseEffect from "./components/UseEffect";
 
 
 const App = () => {
@@ -42,7 +43,9 @@ const App = () => {
       <Text style={styles.text}>App components</Text>
       {/* <ListMap ></ListMap> */}
       {/* <UserList item={user_List}></UserList> */}
-      <Class_components></Class_components>
+      {/* <Class_components></Class_components> */}
+
+      <UseEffect></UseEffect>
       
 
       {/* <Grid /> */}
