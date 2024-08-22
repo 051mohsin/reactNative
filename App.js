@@ -9,6 +9,7 @@ import Unmount from "./components/Unmount";
 import TouchableHighlightss from "./components/TouchableHighlightss";
 import Radionbuttonss from "./components/Radiobuttonss";
 import Dynamic_Radio from "./components/Dynamic_Radio";
+import Indicator from "./components/Indicator";
 
 const App = () => {
   const user_List =[
@@ -62,7 +63,10 @@ const App = () => {
 
        {/* <Radionbuttonss></Radionbuttonss>*/}
 
-       <Dynamic_Radio></Dynamic_Radio>
+       {/* <Dynamic_Radio></Dynamic_Radio> */}
+        
+
+      <Indicator></Indicator>
 
     
 

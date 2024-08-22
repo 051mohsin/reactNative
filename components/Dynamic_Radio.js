@@ -31,7 +31,7 @@ const Dynamic_Radio = ()=>{
     const [checked,setChecked]=useState(1)
 
     return(
-        <View>
+        <View  > 
             <Text style={styless.heading}>Dynamic Radio Button</Text>
             {
                 skill.map((item,index)=><TouchableOpacity
