@@ -7,7 +7,7 @@ import UseEffect from "./components/UseEffect";
 import Unmount from "./components/Unmount";
 
 import TouchableHighlightss from "./components/TouchableHighlightss";
-
+import Radionbuttonss from "./components/Radiobuttonss";
 
 const App = () => {
   const user_List =[
@@ -56,7 +56,12 @@ const App = () => {
       {/* <Unmount>
       </Unmount> */}
 
-      <TouchableHighlightss></TouchableHighlightss>
+      {/* <TouchableHighlightss></TouchableHighlightss>
+       */}
+
+       <Radionbuttonss></Radionbuttonss>
+
+    
 
 
       </View>
