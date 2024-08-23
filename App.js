@@ -10,6 +10,7 @@ import TouchableHighlightss from "./components/TouchableHighlightss";
 import Radionbuttonss from "./components/Radiobuttonss";
 import Dynamic_Radio from "./components/Dynamic_Radio";
 import Indicator from "./components/Indicator";
+import Show_modal from "./components/Show_modal";
 
 const App = () => {
   const user_List =[
@@ -66,7 +67,9 @@ const App = () => {
        {/* <Dynamic_Radio></Dynamic_Radio> */}
         
 
-      <Indicator></Indicator>
+      {/* <Indicator></Indicator> */}
+
+      <Show_modal></Show_modal>
 
     
 
