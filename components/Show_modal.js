@@ -26,6 +26,13 @@ const Show_modal = () => {
             >
                 <Text style={styles.textStyle}>Show modal</Text>
             </Pressable>
+            
+            <Pressable  onLongPress={()=>console.warn("longpress button")}
+            delayLongPress={500}
+                style={[styles.button, styles.buttonOpen]}
+            >
+                <Text style={styles.textStyle}>Long Pressable</Text>
+            </Pressable>
 
         </View>
     )
