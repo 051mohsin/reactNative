@@ -20,7 +20,6 @@ const Show_modal = () => {
                     </View>
                 </View>
             </Modal>
-
             <Pressable onPress={() => setshowModel(true)}
                 style={[styles.button, styles.buttonOpen]}
             >

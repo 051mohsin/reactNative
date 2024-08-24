@@ -11,6 +11,7 @@ import Radionbuttonss from "./components/Radiobuttonss";
 import Dynamic_Radio from "./components/Dynamic_Radio";
 import Indicator from "./components/Indicator";
 import Show_modal from "./components/Show_modal";
+import StatusBars from "./components/StatusBars";
 
 const App = () => {
   const user_List =[
@@ -45,7 +46,7 @@ const App = () => {
 
   return (
     <ScrollView>
-      <View style={styles.container}>
+      <View >
       <Text style={styles.text}>App components</Text>
       {/* <ListMap ></ListMap> */}
       {/* <UserList item={user_List}></UserList> */}
@@ -69,7 +70,9 @@ const App = () => {
 
       {/* <Indicator></Indicator> */}
 
-      <Show_modal></Show_modal>
+      {/* <Show_modal></Show_modal> */}
+
+      <StatusBars></StatusBars>
 
     
 
