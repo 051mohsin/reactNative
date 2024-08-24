@@ -12,6 +12,7 @@ import Dynamic_Radio from "./components/Dynamic_Radio";
 import Indicator from "./components/Indicator";
 import Show_modal from "./components/Show_modal";
 import StatusBars from "./components/StatusBars";
+import PlatForms from "./components/PlatForms";
 
 const App = () => {
   const user_List =[
@@ -72,7 +73,9 @@ const App = () => {
 
       {/* <Show_modal></Show_modal> */}
 
-      <StatusBars></StatusBars>
+      {/* <StatusBars></StatusBars> */}
+
+      <PlatForms></PlatForms>
 
     
 
