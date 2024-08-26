@@ -1,4 +1,4 @@
-import { Text, View, StyleSheet, ScrollView } from "react-native"
+import { Text, View, StyleSheet, ScrollView, Button } from "react-native"
 import ListMap from "./components/ListMap"
 import Grid from "./components/Grid";
 import UserList from "./components/UserList";
@@ -13,8 +13,12 @@ import Indicator from "./components/Indicator";
 import Show_modal from "./components/Show_modal";
 import StatusBars from "./components/StatusBars";
 import PlatForms from "./components/PlatForms";
+import Custom_Modal from "./components/Custom_Modal";
+import { useState } from "react";
 
 const App = () => {
+
+  const [showDialbox , setshowDailbox]= useState(false)
   const user_List =[
     {
         id:1,
@@ -46,9 +50,27 @@ const App = () => {
 ]
 
   return (
-    <ScrollView>
-      <View >
-      <Text style={styles.text}>App components</Text>
+    // <ScrollView>
+      <View style={styles.container} >
+        {
+          showDialbox ? <View style={styles.modal}>
+          <View style={styles.body}>
+
+            <Text style={styles.text}>
+              DialBox Custom Modal
+            </Text>
+            <Button title="Hide Dialbox" onPress={()=>setshowDailbox(false)}></Button>
+
+          </View>
+
+        </View>: null
+        }
+      
+      <Button title="show Dialbox" onPress={()=>setshowDailbox(true)}></Button> 
+
+
+
+
       {/* <ListMap ></ListMap> */}
       {/* <UserList item={user_List}></UserList> */}
       {/* <Class_components></Class_components> */}
@@ -75,13 +97,15 @@ const App = () => {
 
       {/* <StatusBars></StatusBars> */}
 
-      <PlatForms></PlatForms>
+      {/* <PlatForms></PlatForms> */}
 
-    
+      {/* <Custom_Modal></Custom_Modal> */}
+
+ 
 
 
       </View>
-    </ScrollView>
+    /* </ScrollView> */
     
   )
 
@@ -175,14 +199,26 @@ export default App;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    justifyContent:"flex-end"
+    
     
   },
+  modal:{
+    flex:1,
+    backgroundColor:'green',
+    justifyContent:'center',
+    alignItems:'center'
+  },
+  body:{
+    backgroundColor:"purple",
+    height:300,
+    width:300,
+    padding:30,
+    justifyContent:'flex-end'
+
+  },
   text: {
-    textAlign: "center",
-    margin:15,
-    padding:15,
-    fontSize: 24,
-    color: "red"
+
+    color: "white"
   }
 })
